@@ -1,0 +1,63 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    xmlns:tools="http://schemas.android.com/tools"
+    
+   	style="@style/LinearLayoutAsteroidesInicio">
+    
+    <TextView 
+
+      style="@style/TextoAsteroides"
+      
+      android:text="@string/titulo_aplicacion"/>
+    
+    <TableLayout 
+            style="@style/TableLayoutLandAsteroidesInicio">
+    
+    	<TableRow
+    	    android:layout_height="wrap_content">
+	    
+		    <Button
+		        android:id="@+id/boton_arrancar"
+		        style="@style/TextoAsteroides.Botones"
+		        android:layout_marginBottom="5dp"
+		        android:text="@string/arrancar" />
+		    
+		    <Button android:id="@+id/boton_configurar"
+		
+		     style="@style/TextoAsteroides.Botones"
+		
+		      android:text="@string/configuraciones"/>
+	   
+	    </TableRow> 
+	   
+        <TableRow
+            android:layout_height="wrap_content">	 
+    		
+		   <Button android:id="@+id/boton_acerca_de"
+		
+		      style="@style/TextoAsteroides.Botones"
+		
+		      android:text="@string/acerca_de"/> 
+		      
+		    
+		    <Button android:id="@+id/boton_puntuaciones"
+		
+		      style="@style/TextoAsteroides.Botones"
+		
+		      android:text="@string/puntuaciones"/> 
+		      
+	    </TableRow>
+	    
+        <TableRow
+            android:layout_height="wrap_content">
+		    	 
+            <Button android:id="@+id/boton_salir"
+		
+		      style="@style/TextoAsteroides.Botones"
+		
+		      android:text="@string/salir"/> 
+    	</TableRow>
+	    
+    </TableLayout>
+</LinearLayout>

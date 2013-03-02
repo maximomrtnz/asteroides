@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="titulo_aplicacion">Asteroids</string>
+    <string name="menu_settings">Settings</string>
+	<string name="arrancar">Start</string>
+	<string name="configuraciones">Settings</string>
+	<string name="acerca_de">About</string>
+	<string name="salir">Quit</string>
+	<string name="acerca_de_string">This program has develops like an example of Android Course.</string>
+	<string name="acerca_de_titulo">About ...</string>
+	<string name="puntuaciones">Scores</string>
+	
+</resources>
