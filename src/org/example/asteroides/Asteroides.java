@@ -16,6 +16,7 @@ public class Asteroides extends Activity {
 	private Button botonPreferencias;
 	private Button botonPuntuaciones;
 	private Button botonSalir;
+	private Button botonJugar;
 	
 	public static AlmacenPuntuaciones almacen= new AlmacenPuntuacionesArray();	
 	
@@ -28,6 +29,8 @@ public class Asteroides extends Activity {
 		this.botonPreferencias = (Button)findViewById(R.id.boton_configurar);
 		this.botonPuntuaciones = (Button)findViewById(R.id.boton_puntuaciones);
 		this.botonSalir = (Button)findViewById(R.id.boton_salir);
+		this.botonJugar = (Button)findViewById(R.id.boton_arrancar);
+		
 		this.botonAcercaDe.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -60,6 +63,15 @@ public class Asteroides extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				salir();
+			}
+		});
+		
+		this.botonJugar.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				lanzarJuego(null);
 			}
 		});
 	}
@@ -99,6 +111,11 @@ public class Asteroides extends Activity {
 	
 	public void lanzarPuntuaciones(View view){
 		Intent i = new Intent(this, Puntuaciones.class);
+		startActivity(i);
+	}
+	
+	public void lanzarJuego(View view){
+		Intent i = new Intent(this, Juego.class);
 		startActivity(i);
 	}
 	
