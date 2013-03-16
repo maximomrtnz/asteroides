@@ -90,7 +90,11 @@ public class Grafico {
 		angulo += rotacion * factor; // Actualizamos ángulo
 
 	}
-
+	
+	public static int getMaxVelocidad(){
+		return MAX_VELOCIDAD;
+	}
+	
 	public double distancia(Grafico g) {
 
 		return Math.hypot(posX - g.posX, posY - g.posY);
